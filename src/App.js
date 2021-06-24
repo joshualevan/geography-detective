@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import countries from './data/countries'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  //state
+  const [currentCountry, setCurrentCountry] = useState("The United States of America");
+  const [currentWitness, setCurrentWitness] = useState("")
+
+  //Find Country Data
+  const findCountryData = (key, state) => {
+    let value; 
+    countries.map(country => {
+      if(country.name === state){
+        value = country[key];
+      }
+    })
+    return value
+  };
+
+  //Style
+  const backgroundStyle = {
+    backgroundImage : `url(${findCountryData('background', currentCountry)})`,
+    width : '100%',
+    height : '100vh',
+    backgroundRepeat : 'no-repeat',
+    backgroundSize : 'cover',
+    backgroundPosition : 'fixed',
+  }
+
+  return(
+      <div style={backgroundStyle}>{findCountryData('contitnent', currentCountry)}</div>
+  )
 }
 
-export default App;
+export default App
