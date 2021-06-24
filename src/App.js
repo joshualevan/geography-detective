@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import countries from './data/countries'
+import Witnesses from './components/Witnesses'
 
 const App = () => {
   //state
@@ -25,10 +26,17 @@ const App = () => {
     backgroundRepeat : 'no-repeat',
     backgroundSize : 'cover',
     backgroundPosition : 'fixed',
+    display: 'flex',
+    justifyContent: 'center'
   }
 
+//--------------------------- 
+//-----------UI--------------
   return(
-      <div style={backgroundStyle}>{findCountryData('contitnent', currentCountry)}</div>
+    <div style={backgroundStyle}>
+      <Witnesses current={currentCountry} witness={currentWitness} getData={findCountryData}/>
+    </div>
+      
   )
 }
 
