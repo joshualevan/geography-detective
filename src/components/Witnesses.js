@@ -16,6 +16,8 @@ const Witnesses = props => {
                        <div>
                         <p>name: {witness.name}</p>
                         <p>age: {witness.age}</p>
+                        <p>occupation: {witness.occupation}</p>
+                        <p>status: {witness.status}</p>
                        </div>
                    </div>
                )

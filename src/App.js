@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import countries from './data/countries'
 import Witnesses from './components/Witnesses'
+import Nav from './components/Nav'
+import Info from './components/Info'
+
 
 const App = () => {
   //state
-  const [currentCountry, setCurrentCountry] = useState("The United States of America");
+  const [currentCountry, setCurrentCountry] = useState("India");
   const [currentWitness, setCurrentWitness] = useState("")
 
   //Find Country Data
@@ -18,6 +21,11 @@ const App = () => {
     return value
   };
 
+  //Set Current Country
+  const handlerSetCurrentCountry = e => {
+    setCurrentCountry(e.target.value)
+  }
+
   //Style
   const backgroundStyle = {
     backgroundImage : `url(${findCountryData('background', currentCountry)})`,
@@ -27,14 +35,19 @@ const App = () => {
     backgroundSize : 'cover',
     backgroundPosition : 'fixed',
     display: 'flex',
-    justifyContent: 'center'
+    alignItems: 'center',
+    flexDirection : 'column'
   }
 
 //--------------------------- 
 //-----------UI--------------
   return(
     <div style={backgroundStyle}>
-      <Witnesses current={currentCountry} witness={currentWitness} getData={findCountryData}/>
+      <Nav current={currentCountry} setCurrent={handlerSetCurrentCountry}/>
+      <div className="content-container">
+        <Witnesses current={currentCountry} witness={currentWitness} getData={findCountryData}/>
+        <Info current={currentCountry}/>
+      </div>
     </div>
       
   )
