@@ -16,12 +16,14 @@ button {
 	color: rgb(180, 117, 185);
 	border: 2px solid rgba(31, 20, 32, 1);
 	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
 }
 
 button:hover {
 	border: 2px solid rgb(252, 255, 211);
-	color: rgb(252, 255, 211);
+	color: rgb(252, 213, 255);
 	cursor: pointer;
+	transition: all 0.3s ease-in-out;
 }
 
 nav {
