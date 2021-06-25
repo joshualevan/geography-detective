@@ -5,16 +5,54 @@ font-family: 'Share Tech Mono', monospace; */
 	box-sizing: border-box;
 }
 
+button {
+	font-family: 'Roboto', sans-serif;
+	height: 50px;
+	width: 150px;
+	margin-right: 20px;
+	border-radius: 0;
+	border: none;
+	background-color: rgba(31, 20, 32, 0);
+	color: rgb(180, 117, 185);
+	border: 2px solid rgba(31, 20, 32, 1);
+	text-transform: uppercase;
+}
+
+button:hover {
+	border: 2px solid rgb(252, 255, 211);
+	color: rgb(252, 255, 211);
+	cursor: pointer;
+}
+
 nav {
 	width: 100vw;
 	background-color: rgba(31, 20, 32, 0.9);
-	padding: 20px 0 10px 0;
+	padding: 20px 0 15px 0;
 	display: flex;
 	justify-content: center;
 }
 
-nav div {
+.nav-content {
 	width: 1500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.city-country {
+	display: flex;
+	align-content: center;
+}
+
+.city-country p {
+	font-family: 'Roboto', sans-serif;
+	color: rgb(252, 253, 239);
+	margin-bottom: 5px;
+}
+
+.city-country img {
+	height: 35px;
+	margin-right: 10px;
 }
 
 .content-container {

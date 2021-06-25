@@ -7,7 +7,7 @@ import Info from './components/Info'
 
 const App = () => {
   //state
-  const [currentCountry, setCurrentCountry] = useState("India");
+  const [currentCountry, setCurrentCountry] = useState("The United States of America");
   const [currentWitness, setCurrentWitness] = useState("")
 
   //Find Country Data
@@ -43,7 +43,7 @@ const App = () => {
 //-----------UI--------------
   return(
     <div style={backgroundStyle}>
-      <Nav current={currentCountry} setCurrent={handlerSetCurrentCountry}/>
+      <Nav current={currentCountry} setCurrent={handlerSetCurrentCountry} getData={findCountryData}/>
       <div className="content-container">
         <Witnesses current={currentCountry} witness={currentWitness} getData={findCountryData}/>
         <Info current={currentCountry}/>
