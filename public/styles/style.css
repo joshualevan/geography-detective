@@ -10,7 +10,7 @@ font-family: 'Share Tech Mono', monospace; */
 	flex-wrap: wrap;
 	background-color: rgba(31, 20, 32, 0.75);
 	width: 1000px;
-	max-height: 900px;
+	max-height: 750px;
 	margin-top: 50px;
 }
 
@@ -24,6 +24,10 @@ font-family: 'Share Tech Mono', monospace; */
 	align-items: center;
 	border-radius: 100px 0 50px 100px;
 	border: 4px solid rgb(252, 255, 211);
+}
+
+.witness:hover {
+	border: 4px solid rgb(238, 255, 0);
 }
 
 .witness img {
