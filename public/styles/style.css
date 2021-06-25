@@ -7,8 +7,9 @@ font-family: 'Share Tech Mono', monospace; */
 
 button {
 	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
 	height: 50px;
-	width: 150px;
+	width: 160px;
 	margin-right: 20px;
 	border-radius: 0;
 	border: none;
@@ -35,7 +36,7 @@ nav {
 }
 
 .nav-content {
-	width: 1500px;
+	width: 95%;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -58,16 +59,17 @@ nav {
 }
 
 .content-container {
-	width: 1500px;
+	width: 95%;
 	display: flex;
 	justify-content: space-between;
 	margin-top: 50px;
 }
 
 .info {
-	width: 450px;
-	height: 1000px;
+	width: 250px;
+	height: 760px;
 	background-color: rgba(31, 20, 32, 0.75);
+	border-radius: 0 0 60px 0;
 }
 
 .witness-container {
@@ -75,16 +77,18 @@ nav {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	background-color: rgba(31, 20, 32, 0.75);
-	width: 1000px;
-	height: 1000px;
+	width: 1020px;
+	height: 760px;
+	border-radius: 100px 0 0 100px;
+	padding: 8px;
 }
 
 .witness {
 	background-color: rgba(31, 20, 32, 0.9);
-	height: 200px;
-	width: 450px;
+	height: 160px;
+	width: 480px;
 	padding: 4px;
-	margin: 20px;
+	margin: 10px 10px 0 10px;
 	display: flex;
 	align-items: center;
 	border-radius: 100px 0 50px 100px;
@@ -110,4 +114,5 @@ nav {
 	color: rgb(238, 255, 0);
 	font-family: 'Share Tech Mono', monospace;
 	margin-bottom: 10px;
+	line-height: 18px;
 }

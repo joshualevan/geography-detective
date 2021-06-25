@@ -7,7 +7,7 @@ import Info from './components/Info'
 
 const App = () => {
   //state
-  const [currentCountry, setCurrentCountry] = useState("The United States of America");
+  const [currentCountry, setCurrentCountry] = useState("India");
   const [currentWitness, setCurrentWitness] = useState("")
 
   //Find Country Data
