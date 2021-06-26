@@ -69,18 +69,19 @@ nav {
 	width: 250px;
 	height: 760px;
 	background-color: rgba(31, 20, 32, 0.75);
-	border-radius: 0 0 60px 0;
+	border-radius: 0 0 40px 0;
 }
 
 .witness-container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	background-color: rgba(31, 20, 32, 0.75);
+	background-color: rgba(237, 221, 238, 0.9);
 	width: 1020px;
 	height: 760px;
 	border-radius: 100px 0 0 100px;
 	padding: 8px;
+	/* display: none; */
 }
 
 .witness {
