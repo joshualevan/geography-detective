@@ -11,7 +11,7 @@ const Witnesses = props => {
            getData("witnesses", current)
            .map(witness => {
                return(
-                   <div className="witness">
+                   <div className="witness" key={witness.id}>
                        <img src={witness.photo} alt={`${witness.name} photo`} />
                        <div>
                         <p>name: {witness.name}</p>

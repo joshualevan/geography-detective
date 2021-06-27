@@ -46,7 +46,7 @@ const App = () => {
       <Nav current={currentCountry} setCurrent={handlerSetCurrentCountry} getData={findCountryData}/>
       <div className="content-container">
         <Witnesses current={currentCountry} witness={currentWitness} getData={findCountryData}/>
-        <Info current={currentCountry}/>
+        <Info current={currentCountry} getData={findCountryData}/>
       </div>
     </div>
       

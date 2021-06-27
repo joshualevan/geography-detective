@@ -66,10 +66,46 @@ nav {
 }
 
 .info {
-	width: 250px;
+	width: 300px;
 	height: 760px;
-	background-color: rgba(31, 20, 32, 0.75);
+	background-color: rgba(41, 28, 43, 0.98);
 	border-radius: 0 0 40px 0;
+	padding: 20px 25px;
+	font-family: 'Share Tech Mono', monospace;
+	color: rgb(252, 253, 239);
+}
+
+.info p {
+	margin-top: 20px;
+	line-height: 20px;
+}
+
+.info img {
+	width: 100%;
+	margin-top: 25px;
+	border-radius: 0 0 20px 0;
+}
+
+.info-colapsed {
+	width: 300px;
+	height: 100px;
+	background-color: rgba(41, 28, 43, 0.98);
+	border-radius: 0 0 30px 0;
+	padding: 20px 25px;
+}
+
+.info-colapsed p,
+.info-colapsed img {
+	display: none;
+}
+span {
+	color: rgb(180, 117, 185);
+}
+
+.caption {
+	font-size: 13px;
+	margin-top: 3px !important;
+	color: rgb(250, 198, 253);
 }
 
 .witness-container {
